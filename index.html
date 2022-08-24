@@ -34,18 +34,6 @@
 
     <!-- experiment file -->
     <script src="js/index.js"></script>
-
-    <!-- unique turker -->
-    <script type="text/JavaScript">
-      $(document).ready(function(){
-      var ut_id = "35a1a045762b872be4cd6bbf1b4f1050";
-      var ut_response = UTWorkerLimitReached(ut_id);
-      console.log("Unique turker response" +  ut_response);
-      if (ut_response) {
-        $(".slide").hide();
-        $("body").html("You have already completed the maximum number of HITs allowed by this requester. Please click 'Return HIT' to avoid any impact on your approval rating.");
-    }});
-    </script>
     <script src="https://proliferate.alps.science/static/js/proliferate.js" type="text/javascript"></script>
 
 </head>
