@@ -10,9 +10,9 @@ function make_slides(f) {
       $('.err2').hide();
       $('.disq').hide();
 
-      document.getElementById("s").innerHTML = "Please fill out the missing letters or words from the following sentences: ";
-      document.getElementById("q").innerHTML = "I love my three sister";
-      document.getElementById("q2").innerHTML = "The past tense of 'eat' is: ";
+      document.getElementById("s").innerHTML = "Vui lòng hoàn thành các từ còn thiếu trong các câu sau: ";
+      document.getElementById("q").innerHTML = "Một lễ quan trọng là lễ Hai Bà";
+      document.getElementById("q2").innerHTML = "Việt Nam có bao nhiêu miền: ";
     },
     button : function() {
       exp.text_input = document.getElementById("text_box").value;
@@ -23,9 +23,11 @@ function make_slides(f) {
 
       if(
         (disqualifyCounter < 3) &&
-        (exp.text_input == "s" | exp.text_input == "S" |
-          exp.text_input == "s." | exp.text_input == "S." ) &&
-        (exp.text_input_2.toLowerCase() == "ate" | exp.text_input_2.toLowerCase() == "ate.") ){
+        (exp.text_input == "Trưng" | exp.text_input == "trưng" | 
+         exp.text_input == "Trưng." | exp.text_input == "trưng." |
+         exp.text_input == "Trung." | exp.text_input == "trung." |
+         exp.text_input == "Trung" | exp.text_input == "trung") &&
+        (exp.text_input_2 == "3" | exp.text_input_2.toLowerCase() == "ba" | exp.text_input_2.toLowerCase() == "ba.") ){
             console.log("enter");
             exp.data_trials.push({
               "slide_number": exp.phase,
