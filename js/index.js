@@ -12,7 +12,7 @@ function make_slides(f) {
 
       document.getElementById("s").innerHTML = "Vui lòng điền từ còn thiếu hoặc trả lời cho các câu hỏi sau: ";
       document.getElementById("q").innerHTML = "Một lễ quan trọng là lễ Hai Bà";
-      document.getElementById("q2").innerHTML = "Việt Nam có bao nhiêu miền: ";
+      document.getElementById("q2").innerHTML = "Việt Nam có bao nhiêu miền (chỉ viết ra số): ";
     },
     button : function() {
       exp.text_input = document.getElementById("text_box").value;
