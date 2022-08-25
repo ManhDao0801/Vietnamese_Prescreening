@@ -10,7 +10,7 @@ function make_slides(f) {
       $('.err2').hide();
       $('.disq').hide();
 
-      document.getElementById("s").innerHTML = "Vui lòng hoàn thành các từ còn thiếu trong các câu sau: ";
+      document.getElementById("s").innerHTML = "Vui lòng điền từ còn thiếu hoặc trả lời cho các câu hỏi sau: ";
       document.getElementById("q").innerHTML = "Một lễ quan trọng là lễ Hai Bà";
       document.getElementById("q2").innerHTML = "Việt Nam có bao nhiêu miền: ";
     },
